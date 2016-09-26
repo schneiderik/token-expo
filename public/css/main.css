@@ -1,162 +1,124 @@
-.quick-look-modal {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  overflow-y: scroll; }
-  .quick-look-modal .quick-look-modal__content {
-    position: relative;
-    margin: 70px auto;
-    max-width: 848px;
-    width: 100%;
-    background: #FFF;
-    padding: 25px 40px 40px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    z-index: 101; }
-    .quick-look-modal .quick-look-modal__content #product {
-      margin-top: 0; }
-  .quick-look-modal .quick-look-modal__dismiss-bar {
-    position: relative;
-    top: 70px;
-    max-width: 848px;
-    margin: 0 auto;
-    width: 100%;
-    background: #222;
-    z-index: 101; }
-    .quick-look-modal .quick-look-modal__dismiss-bar:before, .quick-look-modal .quick-look-modal__dismiss-bar:after {
-      content: " ";
-      display: table; }
-    .quick-look-modal .quick-look-modal__dismiss-bar:after {
-      clear: both; }
-  .quick-look-modal .quick-look-modal__dismiss-link {
-    display: inline-block;
-    float: right;
-    text-align: center;
-    height: 1.75rem;
-    width: 1.7rem;
-    font-size: 2rem;
-    line-height: 1rem;
-    font-weight: 100;
-    cursor: pointer;
-    padding: 0.25rem;
-    color: #FFF; }
+@charset "UTF-8";
+@import url(./reset.css);
+@font-face {
+  font-family: 'bebas';
+  src: url("/fonts/bebas.eot");
+  src: url("/fonts/bebas.eot?#iefix") format("embedded-opentype"), url("/fonts/bebas.woff") format("woff"), url("/fonts/bebas.ttf") format("truetype"), url("/fonts/bebas.svg#bebas") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-#main-header {
-  margin: 0 auto 10rem; }
-  #main-header:before, #main-header:after {
-    content: " ";
-    display: table; }
-  #main-header:after {
-    clear: both; }
-  @media (max-width: 650px) {
-    #main-header {
-      margin: 0 auto 9rem; } }
-  @media (max-width: 540px) {
-    #main-header {
-      margin: 0 auto 8rem; } }
-  @media (max-width: 420px) {
-    #main-header {
-      margin: 0 auto 6rem; } }
-  #main-header .main-header__navigation {
-    margin: auto;
-    max-width: 768px;
-    width: 90%; }
-  #main-header .main-header__title {
-    font-family: 'bebas', 'helvetica neue', helvetica, sans-serif;
-    margin-bottom: 0.5rem;
-    font-size: 2.5rem;
-    letter-spacing: 0.12rem;
-    text-transform: uppercase;
-    word-spacing: 0.5rem;
-    float: left; }
-    #main-header .main-header__title a {
-      color: #222;
-      text-decoration: none; }
-      #main-header .main-header__title a:hover {
-        color: #222; }
-  #main-header .main-header__external-link-bar {
-    margin-bottom: 1.5rem;
-    background: #222; }
-  #main-header .main-header__external-link-icon {
-    height: 1.4rem; }
-  #main-header .main-header__external-links {
-    position: relative;
-    padding: 0 0.9rem;
-    width: 100%; }
-  #main-header .main-header__external-link {
-    height: 2.5rem;
-    display: inline-block;
-    text-decoration: none;
-    color: #FFF;
-    padding: 0.55rem 0.3rem;
-    line-height: 1.4rem;
-    vertical-align: middle; }
-    #main-header .main-header__external-link:hover {
-      background: #555; }
-    #main-header .main-header__external-link.align-right {
-      float: right; }
-  #main-header .main-header__external-link--text-link {
-    text-decoration: none;
-    color: #FFF;
-    display: inline-block;
-    position: relative; }
-  @media (max-width: 768px) {
-    #main-header .main-header__title {
-      float: none; } }
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background-color: #FFFFFF;
+  color: #222;
+  font-family: "Droid Serif", georgia, serif;
+  line-height: 1.8rem;
+  font-weight: 400; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 22.4px; } }
+
+@media (min-width: 650px) and (max-width: 768px) {
+  html {
+    font-size: 20px; } }
+
+@media (min-width: 540px) and (max-width: 650px) {
+  html {
+    font-size: 17.6px; } }
+
+img {
+  display: block; }
+
+article {
+  padding-top: 3.6rem;
+  margin-top: -3.6rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.8rem; }
+
+h2 {
+  font-family: "bebas", "Hevetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 1.8rem;
+  display: inline-block;
+  width: auto;
+  word-spacing: 0.2rem; }
+
+h3 {
+  font-family: "bebas", "Hevetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+  word-spacing: 0.2rem; }
+
+.easy-press-logo {
+  font-family: "bebas", "Hevetica Neue", sans-serif;
+  word-spacing: 0.2rem; }
+
+.muted {
+  color: #999; }
+
+p,
+figure {
+  margin-bottom: 1.8rem; }
+
+figcaption {
+  color: #AAA;
+  margin-top: -0.9rem; }
+  @media (min-width: 768px) {
+    figcaption {
+      font-size: 0.75rem;
+      line-height: 1.35rem; } }
+
+iframe,
+.fb-video {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.8rem;
+  max-width: 600px; }
+
+hr {
+  margin: 3.6rem 0;
+  height: 1.8rem;
+  text-align: center;
+  background: transparent;
+  border: none; }
+  hr:after {
+    display: block;
+    content: "· · ·";
+    font-size: 2rem;
+    line-height: 1.8rem;
+    color: #AAA; }
+
+#main-header .main-header__external-links {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 100%;
+  text-align: right; }
+
+#main-header .main-header__external-link {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle; }
+  #main-header .main-header__external-link img {
+    height: 1.8rem;
+    width: 1.8rem; }
 
 #main-header .logo {
-  position: absolute;
-  left: 50%;
-  top: -45px;
-  max-width: 250px;
-  margin-left: -125px;
-  transform: rotate(-10deg); }
-  @media (max-width: 650px) {
-    #main-header .logo {
-      top: -40px;
-      max-width: 210px;
-      margin-left: -105px; } }
-  @media (max-width: 540px) {
-    #main-header .logo {
-      top: -30px;
-      max-width: 170px;
-      margin-left: -85px; } }
-  @media (max-width: 420px) {
-    #main-header .logo {
-      top: -20px;
-      max-width: 120px;
-      margin-left: -60px; } }
-
-nav {
-  margin-bottom: 1rem; }
-  nav a,
-  nav span {
-    margin-right: 0.75rem; }
-    nav a:last-child,
-    nav span:last-child {
-      margin-right: 0; }
-  nav span {
-    color: #999; }
-
-#main-navigation {
-  float: right;
-  height: 4.536rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
-  #main-navigation a,
-  #main-navigation span {
-    font-size: 1.2rem;
-    font-weight: 200; }
-  @media (max-width: 768px) {
-    #main-navigation {
-      width: 100%;
-      display: block;
-      float: none; } }
+  max-width: 9rem;
+  margin-bottom: 1.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.6rem; }
 
 .main-footer {
   margin: 0 auto;
@@ -195,82 +157,13 @@ nav {
         text-align: left;
         float: none; } }
 
-.products {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start; }
-
-.product {
-  flex-basis: 31%;
-  margin-bottom: 3rem;
-  text-align: left; }
-  .product .product__name {
-    font-size: 1.2rem;
-    font-weight: 200; }
-    .product .product__name a {
-      text-decoration: none;
-      color: #222; }
-      .product .product__name a:hover {
-        text-decoration: underline; }
-  .product .product__cover-photo > a {
-    text-decoration: none;
-    border: none; }
-    .product .product__cover-photo > a:hover img {
-      opacity: 0.85; }
-  .product .product__cover-photo img {
-    max-width: 102%;
-    margin: 0 -1%; }
-  .product .product__author {
-    font-weight: 200;
-    color: #999; }
-  @media (max-width: 650px) {
-    .product {
-      flex-basis: 48%; } }
-  @media (max-width: 460px) {
-    .product {
-      flex-basis: 100%; }
-      .product .product__cover-photo {
-        float: left;
-        padding-right: 1rem; }
-        .product .product__cover-photo img {
-          max-width: 150px; } }
-
-#product {
-  margin-top: -2rem; }
-  #product .product__header {
-    margin-bottom: 3rem; }
-  #product .product__name {
-    font-size: 2rem; }
-  #product .product__author {
-    color: #999;
-    margin-bottom: 1rem; }
-  #product .product__details {
-    color: #999; }
-  #product .product__store-link {
-    margin-top: 1rem; }
-  #product .product__images figure {
-    width: 103%;
-    margin: 0 -1.5%; }
-  @media (max-width: 540px) {
-    #product .product__header {
-      margin-bottom: 2rem; }
-    #product .product__author {
-      float: none; }
-    #product .product__price {
-      float: none; }
-    #product .product__quantity {
-      float: none; }
-      #product .product__quantity:after {
-        content: ""; } }
-
 .slideshow {
   position: relative;
   width: 100%;
   max-width: 600px;
   height: 400px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 1.8rem; }
 
 .slideshow img {
   position: absolute;
@@ -331,175 +224,98 @@ nav {
   -o-transform: scale(1.1);
   transform: scale(1.1); }
 
-@font-face {
-  font-family: 'bebas';
-  src: url("/fonts/bebas.eot");
-  src: url("/fonts/bebas.eot?#iefix") format("embedded-opentype"), url("/fonts/bebas.woff") format("woff"), url("/fonts/bebas.ttf") format("truetype"), url("/fonts/bebas.svg#bebas") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-* {
-  box-sizing: border-box; }
-
-html {
-  font-size: 16px; }
-
-body {
-  background-color: #FFFFFF;
-  color: #222;
-  font-family: 'Droid Serif', helvetica, sans-serif;
-  line-height: 1.8;
-  font-weight: 400; }
-
-@media (min-width: 768px) {
-  html {
-    font-size: 21px; } }
-
-@media (min-width: 650px) and (max-width: 768px) {
-  html {
-    font-size: 20px; } }
-
-@media (min-width: 540px) and (max-width: 650px) {
-  html {
-    font-size: 18px; } }
-
 .nowrap {
   white-space: nowrap; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; }
+p a,
+figcaption a {
+  color: #222;
+  margin-left: -0.2rem;
+  margin-right: -0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-top: 0.2rem; }
+  p a:hover,
+  figcaption a:hover {
+    background-color: #FFF200; }
 
-h2 {
-  font-family: "bebas", "Hevetica Neue", sans-serif;
-  font-weight: 700;
-  font-size: 1.7rem;
-  margin-bottom: 1.8rem;
-  display: inline-block;
-  width: auto;
-  word-spacing: 0.2rem; }
-
-h3 {
-  font-family: "bebas", "Hevetica Neue", sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  word-spacing: 0.2rem; }
-
-.easy-press-logo {
-  font-family: "bebas", "Hevetica Neue", sans-serif;
-  word-spacing: 0.2rem; }
-
-.muted {
-  color: #999; }
-
-p,
-figure {
-  margin-bottom: 1.8rem; }
-
-figcaption {
-  color: #AAA;
-  font-size: 0.75rem;
-  margin-top: 0.45rem; }
-
-iframe {
-  display: block;
-  width: 100%;
-  max-width: 600px; }
-
-hr {
-  margin: 5rem 0 7rem;
-  text-align: center;
-  background: transparent;
-  border: none; }
-  hr:after {
-    content: ". . .";
-    font-size: 2rem;
-    line-height: 1rem;
-    color: #AAA; }
-
-.title {
-  font-size: 1.9rem;
-  margin-bottom: 0.5rem;
-  margin-top: -2rem; }
-
-.subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem; }
-
-.topic {
-  display: inline-block;
-  border-bottom: 1px solid #CCC;
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem; }
-
-.center {
-  text-align: center; }
-
-.riso {
-  margin: 2rem auto;
-  max-width: 420px;
-  position: relative;
-  left: 1.5%; }
+.promotional-material {
+  display: block; }
+  @media (min-width: 540px) {
+    .promotional-material {
+      display: flex;
+      align-items: flex-start; } }
 
 .token-poster {
   margin-bottom: 1.8rem;
-  width: 100%;
-  max-width: 220px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+  flex: 0 0 35%; }
 
 .tokens {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 1.8rem;
-  text-align: center;
-  font-size: 0;
-  max-width: 420px; }
+  display: flex;
+  width: 100%; }
   .tokens .token {
-    width: 50%;
-    max-width: 140px; }
-  .tokens + figcaption {
-    max-width: 280px;
-    margin: 0 auto; }
+    flex: 0 0 20%; }
 
 nav {
-  text-align: center; }
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.225rem;
+  margin-right: -0.225rem; }
+  nav a {
+    flex: 0 1 33%;
+    display: block;
+    padding: 0 0.25rem;
+    position: relative;
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+    margin-bottom: 0.45rem; }
+    nav a .poster {
+      position: relative;
+      top: 0;
+      left: 0;
+      box-shadow: -4px 5px 0 #222;
+      border: 1px solid #222;
+      margin-bottom: 0.45rem; }
+    nav a span {
+      text-decoration: none;
+      color: #FFF;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      margin-left: -2rem;
+      font-family: "bebas", "Hevetica Neue", sans-serif;
+      font-size: 0.8rem;
+      background: #222;
+      height: 1.44rem;
+      width: 4rem;
+      line-height: 1.35rem;
+      text-align: center;
+      border-radius: 0.9rem;
+      z-index: 2;
+      padding: 0 0.5rem; }
+    nav a img {
+      z-index: 1; }
+    nav a:hover .poster {
+      box-shadow: -6px 9px 0 #222;
+      left: 2px;
+      top: -4px; }
 
 .about {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.8rem;
   margin: 0 auto 1.8rem;
   max-width: 768px; }
 
 .page-container {
-  margin: auto;
-  max-width: 961px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
   width: 90%;
   position: relative; }
-
-.grid {
-  margin-left: -0.9rem;
-  margin-right: -0.9rem; }
-  @media (min-width: 768px) {
-    .grid {
-      display: flex; } }
-
-.primary-content,
-.secondary-content {
-  padding-left: 0.9rem;
-  padding-right: 0.9rem; }
-
-.primary-content {
-  order: 2;
-  flex-grow: 1; }
-
-.secondary-content {
-  flex: 0 0 250px;
-  order: 1; }
-  @media (max-width: 768px) {
-    .secondary-content {
-      text-align: center; } }
 
 .application-container {
   margin-bottom: 1.8rem;
@@ -510,7 +326,6 @@ nav {
   word-spacing: 0.2rem;
   display: inline-block;
   padding: 0.45rem 1.8rem;
-  border-radius: 4px;
   color: #000;
   text-decoration: none;
   border: 0.2rem solid #000000; }
