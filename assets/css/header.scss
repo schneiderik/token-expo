@@ -1,24 +1,5 @@
 #main-header {
   position: relative;
-
-  .main-header__external-links {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 100%;
-    text-align: right;
-  }
-
-  .main-header__external-link {
-    display: inline-block;
-    text-decoration: none;
-    vertical-align: middle;
-
-    img {
-      height: $line-height-base;
-      width: $line-height-base;
-    }
-  }
 }
 
 #main-header .logo {
