@@ -10,6 +10,16 @@
   padding-top: $line-height-base * 3.2;
 }
 
+
+.header-token-overflow-wrapper {
+  height: $line-height-base * 10;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .header-token-container {
   position: absolute;
   left: 50%;

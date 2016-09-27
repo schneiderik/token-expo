@@ -108,6 +108,14 @@ hr {
   margin-right: auto;
   padding-top: 5.76rem; }
 
+.header-token-overflow-wrapper {
+  height: 18rem;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
 .header-token-container {
   position: absolute;
   left: 50%;
