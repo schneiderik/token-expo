@@ -98,27 +98,109 @@ hr {
     line-height: 1.8rem;
     color: #AAA; }
 
-#main-header .main-header__external-links {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 100%;
-  text-align: right; }
-
-#main-header .main-header__external-link {
-  display: inline-block;
-  text-decoration: none;
-  vertical-align: middle; }
-  #main-header .main-header__external-link img {
-    height: 1.8rem;
-    width: 1.8rem; }
+#main-header {
+  position: relative; }
+  #main-header .main-header__external-links {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 100%;
+    text-align: right; }
+  #main-header .main-header__external-link {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle; }
+    #main-header .main-header__external-link img {
+      height: 1.8rem;
+      width: 1.8rem; }
 
 #main-header .logo {
   max-width: 9rem;
   margin-bottom: 1.8rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3.6rem; }
+  padding-top: 5.76rem; }
+
+.header-token-container {
+  position: absolute;
+  left: 50%;
+  top: -3.6rem; }
+
+.header-token {
+  max-width: 9rem;
+  position: absolute; }
+
+.header-token0 {
+  top: 0;
+  left: -45rem; }
+
+.header-token1 {
+  top: 0;
+  left: -36rem; }
+
+.header-token2 {
+  top: 0;
+  left: -27rem; }
+
+.header-token3 {
+  top: 0;
+  left: -18rem; }
+
+.header-token4 {
+  top: 0;
+  left: -9rem; }
+
+.header-token5 {
+  top: 0;
+  left: 0rem; }
+
+.header-token6 {
+  top: 0;
+  left: 9rem; }
+
+.header-token7 {
+  top: 0;
+  left: 18rem; }
+
+.header-token8 {
+  top: 0;
+  left: 27rem; }
+
+.header-token9 {
+  top: 0;
+  left: 36rem; }
+
+.header-token10 {
+  top: 9rem;
+  left: -40.5rem; }
+
+.header-token11 {
+  top: 9rem;
+  left: -31.5rem; }
+
+.header-token12 {
+  top: 9rem;
+  left: -22.5rem; }
+
+.header-token13 {
+  top: 9rem;
+  left: -13.5rem; }
+
+.header-token14 {
+  top: 9rem;
+  left: 4.5rem; }
+
+.header-token15 {
+  top: 9rem;
+  left: 13.5rem; }
+
+.header-token16 {
+  top: 9rem;
+  left: 22.5rem; }
+
+.header-token17 {
+  top: 9rem;
+  left: 31.5rem; }
 
 .main-footer {
   margin: 0 auto;

@@ -10,4 +10,10 @@
   </div>
 
   <img class="logo" src="/images/logo.png" />
+
+  <div class="header-token-container">
+    {{#eachRandom tokens}}
+      <img class="header-token header-token{{@index}}" src="/images/token/{{this}}"/>
+    {{/eachRandom}}
+  </div>
 </header>

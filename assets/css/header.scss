@@ -1,4 +1,6 @@
 #main-header {
+  position: relative;
+
   .main-header__external-links {
     position: absolute;
     top: 1rem;
@@ -24,5 +26,41 @@
   margin-bottom: $line-height-base;
   margin-left: auto;
   margin-right: auto;
-  margin-top: $line-height-base * 2;
+  padding-top: $line-height-base * 3.2;
+}
+
+.header-token-container {
+  position: absolute;
+  left: 50%;
+  top: -$line-height-base * 2;
+}
+
+.header-token {
+  max-width: $line-height-base * 5;
+  position: absolute;
+}
+
+$token-size: $line-height-base * 5;
+
+@for $i from 0 through 17 {
+  @if $i < 10 {
+    .header-token#{$i} {
+      top: 0;
+      left: ($token-size * $i) - $token-size * 5;
+    }
+  }
+
+  @if $i >= 10 and $i < 14 {
+    .header-token#{$i} {
+      top: $token-size;
+      left: ($token-size * ($i - 11)) - $token-size * 3.5;
+    }
+  }
+
+  @if $i >= 14 and $i < 18 {
+    .header-token#{$i} {
+      top: $token-size;
+      left: ($token-size * ($i - 10)) - $token-size * 3.5;
+    }
+  }
 }
