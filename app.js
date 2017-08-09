@@ -74,7 +74,10 @@ app.get('/', function (req, res) {
       "4-victoria.png",
       "4-ali.png",
       "4-gabi.png",
-      "4-henry.png"
+      "4-henry.png",
+      "5-melissa.png",
+      "5-max.png",
+      "5-aim.png"
     ]
   });
 });
