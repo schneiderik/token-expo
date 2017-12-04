@@ -3,63 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Token: An exposition of Chicago artists</title>
+  <title>Token: A Night of Art, Music and Games</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" type="text/css"  href="/css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  {{> header}}
+  <div class="outer-wrapper">
+    <div class="wrapper">
+      {{> header}}
 
-  <div class="page-container">
-    <p class="about">
-      An event that brings together local artists, record labels, and game creators from the Chicago area.
-    </p>
+      <section class="main-section">
+        {{{body}}}
+      </section>
+    </div>
 
-    <nav>
-      <a href="#token1">
-        <div class="poster">
-          <span>Token &nbsp; 1</span>
-          <img src="/images/token/1-poster.jpg"/>
-        </div>
-      </a>
-
-      <a href="#token2">
-        <div class="poster">
-          <span>Token &nbsp; 2</span>
-          <img src="/images/token/2-poster.jpg"/>
-        </div>
-      </a>
-
-      <a href="#token3">
-        <div class="poster">
-          <span>Token &nbsp; 3</span>
-          <img src="/images/token/3-poster.jpg"/>
-        </div>
-      </a>
-
-      <a href="#token4">
-        <div class="poster">
-          <span>Token &nbsp; 4</span>
-          <img src="/images/token/4-poster.png"/>
-        </div>
-      </a>
-
-      <a href="#token5">
-        <div class="poster">
-          <span>Token &nbsp; 5</span>
-          <img src="/images/token/5-poster.jpg"/>
-        </div>
-      </a>
-    </nav>
-  </div>
-
-  <hr/>
-
-  <section id="main-section">
-    {{{body}}}
-  </section>
-
-  {{> footer}}
+    {{> footer}}
+  <div class="outer-wrapper">
 
   <script src="/js/main.js"></script>
 </body>

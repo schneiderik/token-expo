@@ -1,11 +1,12 @@
-@import './fonts';
+@import './angle';
 @import './variables';
 @import './mixins';
 @import './reset.css';
 @import './brand';
 @import './header';
+@import './main-section';
 @import './footer';
-@import './slideshow';
+@import './token';
 
 .nowrap {
   white-space: nowrap;
@@ -14,17 +15,7 @@
 p a,
 figcaption a,
 .external-links .easy-press-link {
-  color: #222;
-  margin-left: -0.2rem;
-  margin-right: -0.2rem;
-  padding-bottom: 0.2rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  padding-top: 0.2rem;
-
-  &:hover {
-    background-color: #FFF200;
-  }
+  color: $black;
 }
 
 .promotional-material {
@@ -129,18 +120,11 @@ nav {
   }
 }
 
-.about {
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0 auto $line-height-base;
-  max-width: 768px;
-}
 
 .page-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 650px;
+  max-width: 1200px;
   width: 90%;
   position: relative;
 }

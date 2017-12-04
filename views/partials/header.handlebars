@@ -1,13 +1,23 @@
-<header id="main-header">
+<header class="main-header">
+  <img class="main-header__logo" src="/images/logo.png" />
 
+  <div class="main-header__social-media">
+    <a href="https://shop.token-expo.com/">Shop</a>
 
-  <img class="logo" src="/images/logo.png" />
+    <a href="https://www.instagram.com/really.easy.press/" class="external-link">
+      <img src="/images/instagram-logo.svg" class="external-link-icon" />
+    </a>
 
-  <div class="header-token-overflow-wrapper">
-    <div class="header-token-container">
-      {{#eachRandom tokens}}
-        <img class="header-token header-token{{@index}}" src="/images/token/{{this}}"/>
-      {{/eachRandom}}
-    </div>
+    <a href="https://www.facebook.com/Easy-Press-543600772457025" class="external-link">
+      <img src="/images/facebook-logo.svg" class="external-link-icon" />
+    </a>
   </div>
+
+  <p class="about">
+    A night of art, comics, music and video games.
+  </p>
+
+  {{#eachRandom tokens}}
+    <img src="/images/token/{{this}}" class="token token--{{@index}}" />
+  {{/eachRandom}}
 </header>

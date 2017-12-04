@@ -1,0 +1,158 @@
+.token {
+  max-width: $line-height-base * 6;
+}
+
+.token--0 {
+  position: absolute;
+  bottom: 6%;
+  left: 7%;
+  transform: rotate(-15deg);
+}
+
+.token--1 {
+  position: absolute;
+  top: -20%;
+  left: 35%;
+  transform: rotate(15deg);
+}
+
+.token--2 {
+  position: absolute;
+  top: -30%;
+  left: 55%;
+  transform: rotate(-5deg);
+}
+
+.token--3 {
+  position: absolute;
+  top: -15%;
+  left: 65%;
+  transform: rotate(5deg);
+}
+
+.token--4 {
+  position: absolute;
+  top: 15%;
+  right: -5%;
+  transform: rotate(15deg);
+}
+
+.token--5 {
+  position: absolute;
+  top: 28%;
+  right: 5%;
+  transform: rotate(-15deg);
+}
+
+.token--6 {
+  position: absolute;
+  bottom: -8%;
+  right: -4%;
+  transform: rotate(10deg);
+}
+
+.token--7 {
+  position: absolute;
+  bottom: -15%;
+  right: 25%;
+  transform: rotate(10deg);
+}
+
+.token--8 {
+  position: absolute;
+  bottom: -10%;
+  right: 60%;
+  transform: rotate(-10deg);
+}
+
+.token--9 {
+  position: absolute;
+  bottom: -18%;
+  right: 50%;
+  transform: rotate(10deg);
+}
+
+.token--10 {
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  transform: rotate(-10deg);
+}
+
+.token--11 {
+  position: absolute;
+  top: -17%;
+  left: 15%;
+  transform: rotate(5deg);
+}
+
+@media (max-width: 1240px) {
+  .token--0, .token--5 {
+    display: none;
+  }
+}
+
+@media (max-width: 1140px) {
+  .token--2 {
+    display: none;
+  }
+  .token--3 {
+    left: 60%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .token--11 {
+    left: 20%;
+  }
+  .token--3 {
+    display: none;
+  }
+  .token--1 {
+    left: 50%;
+    top: -25%;
+  }
+}
+
+@media (max-width: 950px) {
+  .token--10, .token--4 {
+    display: none;
+  }
+  .token--8 {
+    right: 70%;
+  }
+  .token--7 {
+    right: 35%;
+  }
+  .token--9 {
+    right: 60%;
+  }
+}
+
+@media (max-width: 840px) {
+  .token--11 {
+    left: 25%;
+  }
+  .token--1 {
+    left: 40%;
+  }
+}
+
+@media (max-width: 670px) {
+  .token--11, .token--1 {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .token--7 {
+    display: none;
+  }
+  .token--9 {
+    right: 47%;
+  }
+  .token--6 {
+    bottom: -10%;
+    right: -10%;
+  }
+}

@@ -30,7 +30,7 @@ app.engine('handlebars', expressHandlebars({
     'eachRandom': function(context, options) {
       var buffer = '';
       var i = 0;
-      var randomized = shuffle(context);
+      var randomized = shuffle(context).slice(0, 12);
 
       randomized.forEach(function (item) {
         if (options.data) {

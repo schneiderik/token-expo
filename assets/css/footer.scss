@@ -1,48 +1,22 @@
 .main-footer {
+  @include angle-edge($angle: 2, $angle-position-y: 'top', $angle-position-x: 'left');
+  position: relative;
+  z-index: 2;
+  height: $line-height-base*3;
+  background-color: $black;
+  color: $white;
+  text-align: right;
   margin: 0 auto;
-  padding: 5.4rem 0 1.8rem;
+  padding: $line-height-base*1.5 $line-height-base $line-height-base/2;
   font-weight: 300;
-  @include clearfix;
+  font-size: 0.7rem;
 
-  .main-footer__copyright {
-    text-align: center;
-  }
-
-  .main-footer__cc {
+  a {
+    color: $white;
     text-decoration: none;
-  }
 
-  .cc_icon {
-    height: 1rem;
-    width: 1rem;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .main-footer__attribution {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 0.5rem;
-  }
-
-  .main-footer__description {
-    text-align: right;
-    display: inline-block;
-    vertical-align: middle;
-    float: right;
-  }
-
-  @media (max-width: 800px) {
-    margin: 2rem auto 0;
-
-    .main-footer__copyright {
-      float: none;
-    }
-
-    .main-footer__description {
-      margin-top: 0.5rem;
-      text-align: left;
-      float: none;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

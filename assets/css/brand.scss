@@ -2,43 +2,25 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-size: $font-size-base;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: $white;
   color: #222;
-  font-family: $font-family-serif;
+  font-family: $font-family-sans-serif;
   line-height: $line-height-base;
   font-weight: 400;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: $font-size-base * 1.4;
-  }
-}
-
-@media (min-width: 650px) and (max-width: 768px) {
-  html {
-    font-size: $font-size-base * 1.25;
-  }
-}
-
-@media (min-width: 540px) and (max-width: 650px) {
-  html {
-    font-size: $font-size-base * 1.1;
-  }
-}
-
 img {
   display: block;
-}
-
-article {
-  padding-top: $line-height-base * 2;
-  margin-top: -$line-height-base * 2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,31 +28,29 @@ h1, h2, h3, h4, h5, h6 {
   line-height: $line-height-base;
 }
 
-h2 {
-  font-family: $font-family-sans-serif;
+h1 {
+  font-family: $font-family-serif;
   font-weight: 700;
   font-size: 1.7rem;
   margin-bottom: $line-height-base;
-  display: inline-block;
-  width: auto;
-  word-spacing: 0.2rem;
+}
+
+h2 {
+  font-family: $font-family-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: $line-height-base;
 }
 
 h3 {
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-serif;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: $line-height-base;
-  word-spacing: 0.2rem;
-}
-
-.easy-press-logo {
-  font-family: $font-family-sans-serif;
-  word-spacing: 0.2rem;
 }
 
 .muted {
-  color: #999;
+  color: $grey-dark;
 }
 
 p,
@@ -79,7 +59,7 @@ figure {
 }
 
 figcaption {
-  color: #AAA;
+  color: $grey;
   margin-top: -$line-height-base/2;
 
   @media (min-width: 768px) {
