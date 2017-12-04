@@ -30,8 +30,15 @@
     }
 
     &:last-child {
-      @include angle-edge($angle: 2, $angle-position-y: 'top', $angle-position-x: 'left');
       min-height: 600px;
+    }
+  }
+
+  @media (max-width: 787px) {
+    .split-grid__item {
+      &:last-child {
+        @include angle-edge($angle: 2, $angle-position-y: 'top', $angle-position-x: 'left');
+      }
     }
   }
 

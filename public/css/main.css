@@ -330,10 +330,12 @@ hr {
       padding-right: 2.7rem;
       font-weight: 300; }
     .split-grid .split-grid__item:last-child {
+      min-height: 600px; }
+  @media (max-width: 787px) {
+    .split-grid .split-grid__item:last-child {
       position: relative;
       overflow: hidden;
-      clip-path: polygon(0 calc(0% + 4vw), 100% 0, 100% 100%, 0 100%);
-      min-height: 600px; }
+      clip-path: polygon(0 calc(0% + 4vw), 100% 0, 100% 100%, 0 100%); }
       @supports not (clip-path: polygon(0 calc(0% + 4vw), 100% 0, 100% 100%, 0 100%)) {
         .split-grid .split-grid__item:last-child::before, .split-grid .split-grid__item:last-child::after {
           content: "";
@@ -345,7 +347,7 @@ hr {
         .split-grid .split-grid__item:last-child::before {
           top: 0;
           border-width: 5vw 100vw 0 0;
-          border-color: #fff transparent transparent transparent; } }
+          border-color: #fff transparent transparent transparent; } } }
   @media (min-width: 768px) {
     .split-grid {
       align-items: stretch; }
