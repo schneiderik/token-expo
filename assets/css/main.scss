@@ -34,21 +34,27 @@ figcaption a,
 }
 
 .tokens {
-  margin-bottom: $line-height-base;
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  margin: -0.5rem -0.5rem $line-height-base;
 
   .token {
-    flex: 0 0 20%;
-
-    &:not(:last-child) {
-      padding-right: 0.5rem;
-    }
+    flex: 0 1 20%;
+    padding: 0.5rem;
     
     img {
       background: $white;
       border-radius: 50%;
       padding: 0.5rem;
+    }
+
+    @media (max-width: 540px) {
+      flex: 0 1 50%;
+    }
+
+    @media (min-width: 541px) and (max-width: 960px) {
+      flex: 0 1 33%;
     }
   }
 }

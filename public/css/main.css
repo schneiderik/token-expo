@@ -419,17 +419,20 @@ hr {
     display: flex;
     align-items: center;
     flex: 0 1 0%; }
-  .past-events [data-accordian-trigger] .title:after {
-    flex: 1 0 0%;
-    content: "";
-    height: 1px;
-    width: 100%;
-    margin-left: 1.8rem;
-    background-color: #666666; }
+  @media (min-width: 540px) {
+    .past-events [data-accordian-trigger] .title:after {
+      flex: 1 0 0%;
+      content: "";
+      height: 1px;
+      width: 100%;
+      margin-left: 1.8rem;
+      background-color: #666666; } }
   .past-events [data-accordian-trigger] .title:before {
     position: absolute;
     content: "+";
     left: -1.8rem;
+    top: 50%;
+    margin-top: -0.9rem;
     color: #666666; }
   .past-events [data-accordian-trigger]:hover {
     cursor: pointer; }
@@ -618,17 +621,23 @@ figcaption a,
   flex: 0 0 35%; }
 
 .tokens {
-  margin-bottom: 1.8rem;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  flex-wrap: wrap;
+  margin: -0.5rem -0.5rem 1.8rem; }
   .tokens .token {
-    flex: 0 0 20%; }
-    .tokens .token:not(:last-child) {
-      padding-right: 0.5rem; }
+    flex: 0 1 20%;
+    padding: 0.5rem; }
     .tokens .token img {
       background: #FFFFFF;
       border-radius: 50%;
       padding: 0.5rem; }
+    @media (max-width: 540px) {
+      .tokens .token {
+        flex: 0 1 50%; } }
+    @media (min-width: 541px) and (max-width: 960px) {
+      .tokens .token {
+        flex: 0 1 33%; } }
 
 .external-links {
   width: 100%;

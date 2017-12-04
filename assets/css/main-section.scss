@@ -122,19 +122,23 @@
       flex: 0 1 0%;
     }
 
-    .title:after {
-      flex: 1 0 0%;
-      content: "";
-      height: 1px;
-      width: 100%;
-      margin-left: $line-height-base;
-      background-color: $grey-dark;
+    @media (min-width: 540px) {
+      .title:after {
+        flex: 1 0 0%;
+        content: "";
+        height: 1px;
+        width: 100%;
+        margin-left: $line-height-base;
+        background-color: $grey-dark;
+      }
     }
 
     .title:before {
       position: absolute;
       content: "+";
       left: $line-height-base*-1;
+      top: 50%;
+      margin-top: $line-height-base/-2;
       color: $grey-dark;
     }
 
