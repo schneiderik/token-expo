@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-family: "Merriweather", georgia, serif;
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   margin-bottom: 1.8rem; }
 
 h2 {
@@ -384,15 +384,16 @@ hr {
     object-position: top center; }
 
 .past-events {
-  background-color: #FFFFFF;
+  background-color: #000000;
+  color: #FFFFFF;
   padding-top: 5.4rem;
   padding-bottom: 7.2rem;
   padding-left: 2.7rem;
   padding-right: 1.8rem;
   position: relative;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% calc(0% + 2vw), 100% 100%, 0 100%); }
-  @supports not (clip-path: polygon(0 0, 100% calc(0% + 2vw), 100% 100%, 0 100%)) {
+  clip-path: polygon(0 calc(0% + 2vw), 100% 0, 100% 100%, 0 100%); }
+  @supports not (clip-path: polygon(0 calc(0% + 2vw), 100% 0, 100% 100%, 0 100%)) {
     .past-events::before, .past-events::after {
       content: "";
       position: absolute;
@@ -402,7 +403,7 @@ hr {
       border-style: solid; }
     .past-events::before {
       top: 0;
-      border-width: 3vw 0 0 100vw;
+      border-width: 3vw 100vw 0 0;
       border-color: #fff transparent transparent transparent; } }
   @media (max-width: 768px) {
     .past-events {
@@ -411,17 +412,19 @@ hr {
     max-width: 840px;
     margin: 0 auto;
     font-weight: 300; }
+    .past-events .past-events__content a {
+      color: #FFFFFF; }
   .past-events [data-accordian-trigger] .title {
     position: relative; }
   .past-events [data-accordian-trigger] .title:after {
     position: absolute;
     content: "+";
     left: -1.8rem;
-    color: #AAAAAA; }
+    color: #666666; }
   .past-events [data-accordian-trigger]:hover {
     cursor: pointer; }
     .past-events [data-accordian-trigger]:hover .title:after {
-      color: #000000; }
+      color: #FFFFFF; }
   .past-events [data-accordian-trigger].expanded .title:after {
     content: "-"; }
   .past-events [data-accordian-target] {
@@ -439,7 +442,7 @@ hr {
   height: 5.4rem;
   background-color: #000000;
   color: #FFFFFF;
-  text-align: right;
+  text-align: center;
   margin: 0 auto;
   padding: 2.7rem 1.8rem 0.9rem;
   font-weight: 300;
@@ -610,6 +613,12 @@ figcaption a,
   width: 100%; }
   .tokens .token {
     flex: 0 0 20%; }
+    .tokens .token:not(:last-child) {
+      padding-right: 0.5rem; }
+    .tokens .token img {
+      background: #FFFFFF;
+      border-radius: 50%;
+      padding: 0.5rem; }
 
 .external-links {
   width: 100%;

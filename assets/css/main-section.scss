@@ -92,12 +92,13 @@
 }
 
 .past-events {
-  background-color: $white;
+  background-color: $black;
+  color: $white;
   padding-top: $line-height-base*3;
   padding-bottom: $line-height-base*4;
   padding-left: $line-height-base*1.5;
   padding-right: $line-height-base;
-  @include angle-edge($angle: 1, $angle-position-y: 'top', $angle-position-x: 'right');
+  @include angle-edge($angle: 1, $angle-position-y: 'top', $angle-position-x: 'left');
 
   @media (max-width: 768px) {
     padding-top: $line-height-base*2;
@@ -107,6 +108,10 @@
     max-width: 840px;
     margin: 0 auto;
     font-weight: 300;
+    
+    a {
+      color: $white;
+    }
   }
 
   [data-accordian-trigger] {
@@ -118,14 +123,14 @@
       position: absolute;
       content: "+";
       left: $line-height-base*-1;
-      color: $grey;
+      color: $grey-dark;
     }
 
     &:hover {
       cursor: pointer;
 
       .title:after {
-        color: $black;
+        color: $white;
       }
     }
 

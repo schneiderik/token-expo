@@ -40,6 +40,16 @@ figcaption a,
 
   .token {
     flex: 0 0 20%;
+
+    &:not(:last-child) {
+      padding-right: 0.5rem;
+    }
+    
+    img {
+      background: $white;
+      border-radius: 50%;
+      padding: 0.5rem;
+    }
   }
 }
 
