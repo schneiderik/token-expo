@@ -166,6 +166,9 @@ body {
 
 html {
   font-size: 21px; }
+  @media (max-width: 540px) {
+    html {
+      font-size: 16.8px; } }
 
 body {
   background-color: #FFFFFF;
@@ -321,10 +324,11 @@ hr {
     width: 100%;
     flex: 0 1 100%; }
     .split-grid .split-grid__item:first-child {
-      padding-top: 7.2rem;
-      padding-bottom: 5.4rem;
-      padding-left: 3.6rem;
-      padding-right: 3.6rem; }
+      padding-top: 3.6rem;
+      padding-bottom: 1.8rem;
+      padding-left: 2.7rem;
+      padding-right: 2.7rem;
+      font-weight: 300; }
     .split-grid .split-grid__item:last-child {
       position: relative;
       overflow: hidden;
@@ -348,7 +352,10 @@ hr {
       .split-grid .split-grid__item {
         flex: 0 1 50%;
         width: 50%;
-        margin-top: -5.4rem; } }
+        margin-top: -5.4rem; }
+        .split-grid .split-grid__item:first-child {
+          padding-top: 5.4rem;
+          padding-bottom: 7.2rem; } }
 
 .slideshow {
   height: 100%; }
@@ -376,14 +383,14 @@ hr {
 
 .past-events {
   background-color: #FFFFFF;
-  padding-top: 7.2rem;
+  padding-top: 5.4rem;
   padding-bottom: 7.2rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2.7rem;
+  padding-right: 1.8rem;
   position: relative;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% calc(0% + 4vw), 100% 100%, 0 100%); }
-  @supports not (clip-path: polygon(0 0, 100% calc(0% + 4vw), 100% 100%, 0 100%)) {
+  clip-path: polygon(0 0, 100% calc(0% + 2vw), 100% 100%, 0 100%); }
+  @supports not (clip-path: polygon(0 0, 100% calc(0% + 2vw), 100% 100%, 0 100%)) {
     .past-events::before, .past-events::after {
       content: "";
       position: absolute;
@@ -393,14 +400,21 @@ hr {
       border-style: solid; }
     .past-events::before {
       top: 0;
-      border-width: 5vw 0 0 100vw;
+      border-width: 3vw 0 0 100vw;
       border-color: #fff transparent transparent transparent; } }
+  @media (max-width: 768px) {
+    .past-events {
+      padding-top: 3.6rem; } }
   .past-events .past-events__content {
-    max-width: 960px;
-    margin: 0 auto; }
+    max-width: 840px;
+    margin: 0 auto;
+    font-weight: 300; }
+  .past-events [data-accordian-trigger] .title {
+    position: relative; }
   .past-events [data-accordian-trigger] .title:after {
+    position: absolute;
     content: "+";
-    margin-left: 0.9rem;
+    left: -1.8rem;
     color: #AAAAAA; }
   .past-events [data-accordian-trigger]:hover {
     cursor: pointer; }
@@ -409,6 +423,7 @@ hr {
   .past-events [data-accordian-trigger].expanded .title:after {
     content: "-"; }
   .past-events [data-accordian-target] {
+    margin-bottom: 3.6rem;
     display: none; }
     .past-events [data-accordian-target].expanded {
       display: block; }

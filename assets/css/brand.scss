@@ -9,6 +9,10 @@ body {
 
 html {
   font-size: $font-size-base;
+
+  @media (max-width: 540px) {
+    font-size: $font-size-base*0.8;
+  }
 }
 
 body {
