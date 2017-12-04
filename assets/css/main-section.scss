@@ -117,9 +117,21 @@
   [data-accordian-trigger] {
     .title {
       position: relative;
+      display: flex;
+      align-items: center;
+      flex: 0 1 0%;
     }
 
     .title:after {
+      flex: 1 0 0%;
+      content: "";
+      height: 1px;
+      width: 100%;
+      margin-left: $line-height-base;
+      background-color: $grey-dark;
+    }
+
+    .title:before {
       position: absolute;
       content: "+";
       left: $line-height-base*-1;
@@ -129,13 +141,13 @@
     &:hover {
       cursor: pointer;
 
-      .title:after {
+      .title:before {
         color: $white;
       }
     }
 
     &.expanded {
-      .title:after {
+      .title:before {
         content: "-";
       }
     }

@@ -415,17 +415,27 @@ hr {
     .past-events .past-events__content a {
       color: #FFFFFF; }
   .past-events [data-accordian-trigger] .title {
-    position: relative; }
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 0 1 0%; }
   .past-events [data-accordian-trigger] .title:after {
+    flex: 1 0 0%;
+    content: "";
+    height: 1px;
+    width: 100%;
+    margin-left: 1.8rem;
+    background-color: #666666; }
+  .past-events [data-accordian-trigger] .title:before {
     position: absolute;
     content: "+";
     left: -1.8rem;
     color: #666666; }
   .past-events [data-accordian-trigger]:hover {
     cursor: pointer; }
-    .past-events [data-accordian-trigger]:hover .title:after {
+    .past-events [data-accordian-trigger]:hover .title:before {
       color: #FFFFFF; }
-  .past-events [data-accordian-trigger].expanded .title:after {
+  .past-events [data-accordian-trigger].expanded .title:before {
     content: "-"; }
   .past-events [data-accordian-target] {
     margin-bottom: 3.6rem;
