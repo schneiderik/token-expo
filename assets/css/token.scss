@@ -1,5 +1,6 @@
 .token {
   max-width: $line-height-base * 6;
+
 }
 
 .token--0 {
@@ -11,21 +12,21 @@
 
 .token--1 {
   position: absolute;
-  top: -20%;
+  top: -$line-height-base*2.25;
   left: 35%;
   transform: rotate(15deg);
 }
 
 .token--2 {
   position: absolute;
-  top: -30%;
+  top: -$line-height-base*3.5;
   left: 55%;
   transform: rotate(-5deg);
 }
 
 .token--3 {
   position: absolute;
-  top: -15%;
+  top: -$line-height-base*2.5;
   left: 65%;
   transform: rotate(5deg);
 }
@@ -33,7 +34,7 @@
 .token--4 {
   position: absolute;
   top: 15%;
-  right: -5%;
+  right: -$line-height-base*2;
   transform: rotate(15deg);
 }
 
@@ -46,28 +47,28 @@
 
 .token--6 {
   position: absolute;
-  bottom: -8%;
-  right: -4%;
+  bottom: -$line-height-base*1.5;
+  right: -$line-height-base*1.5;
   transform: rotate(10deg);
 }
 
 .token--7 {
   position: absolute;
-  bottom: -15%;
+  bottom: -$line-height-base*1.5;
   right: 25%;
   transform: rotate(10deg);
 }
 
 .token--8 {
   position: absolute;
-  bottom: -10%;
+  bottom: -$line-height-base*1;
   right: 60%;
   transform: rotate(-10deg);
 }
 
 .token--9 {
   position: absolute;
-  bottom: -18%;
+  bottom: -$line-height-base*2;
   right: 50%;
   transform: rotate(10deg);
 }
@@ -75,13 +76,13 @@
 .token--10 {
   position: absolute;
   top: 30%;
-  left: -10%;
+  left: -$line-height-base*2;
   transform: rotate(-10deg);
 }
 
 .token--11 {
   position: absolute;
-  top: -17%;
+  top: -$line-height-base*2;
   left: 15%;
   transform: rotate(5deg);
 }

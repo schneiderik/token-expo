@@ -27,6 +27,8 @@
       padding-left: $line-height-base*1.5;
       padding-right: $line-height-base*1.5;
       font-weight: 300;
+      display: flex;
+      align-items: center;
     }
 
     &:last-child {
@@ -56,6 +58,12 @@
       }
     }
   }
+}
+
+
+.news {
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .slideshow {

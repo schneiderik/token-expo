@@ -213,7 +213,9 @@ hr {
       padding-bottom: 1.8rem;
       padding-left: 2.7rem;
       padding-right: 2.7rem;
-      font-weight: 300; }
+      font-weight: 300;
+      display: flex;
+      align-items: center; }
     .split-grid .split-grid__item:last-child {
       min-height: 600px; }
   @media (max-width: 787px) {
@@ -232,6 +234,10 @@ hr {
         .split-grid .split-grid__item:first-child {
           padding-top: 5.4rem;
           padding-bottom: 7.2rem; } }
+
+.news {
+  max-width: 650px;
+  margin: 0 auto; }
 
 .slideshow {
   height: 100%; }
@@ -341,26 +347,26 @@ hr {
 
 .token--1 {
   position: absolute;
-  top: -20%;
+  top: -4.05rem;
   left: 35%;
   transform: rotate(15deg); }
 
 .token--2 {
   position: absolute;
-  top: -30%;
+  top: -6.3rem;
   left: 55%;
   transform: rotate(-5deg); }
 
 .token--3 {
   position: absolute;
-  top: -15%;
+  top: -4.5rem;
   left: 65%;
   transform: rotate(5deg); }
 
 .token--4 {
   position: absolute;
   top: 15%;
-  right: -5%;
+  right: -3.6rem;
   transform: rotate(15deg); }
 
 .token--5 {
@@ -371,37 +377,37 @@ hr {
 
 .token--6 {
   position: absolute;
-  bottom: -8%;
-  right: -4%;
+  bottom: -2.7rem;
+  right: -2.7rem;
   transform: rotate(10deg); }
 
 .token--7 {
   position: absolute;
-  bottom: -15%;
+  bottom: -2.7rem;
   right: 25%;
   transform: rotate(10deg); }
 
 .token--8 {
   position: absolute;
-  bottom: -10%;
+  bottom: -1.8rem;
   right: 60%;
   transform: rotate(-10deg); }
 
 .token--9 {
   position: absolute;
-  bottom: -18%;
+  bottom: -3.6rem;
   right: 50%;
   transform: rotate(10deg); }
 
 .token--10 {
   position: absolute;
   top: 30%;
-  left: -10%;
+  left: -3.6rem;
   transform: rotate(-10deg); }
 
 .token--11 {
   position: absolute;
-  top: -17%;
+  top: -3.6rem;
   left: 15%;
   transform: rotate(5deg); }
 
