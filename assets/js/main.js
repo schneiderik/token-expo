@@ -2,13 +2,6 @@ import {lory} from "lory.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   const slideshowEl = document.querySelector('.slideshow');
-
-  const slideshow = lory(slideshowEl, {
-    infinite: 1
-  });
-
-  setInterval(slideshow.next.bind(slideshow), 5000);
-
   const accordianTriggers = document.querySelectorAll('[data-accordian-trigger]');
 
   Array.from(accordianTriggers).forEach(trigger => {
@@ -19,4 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
       ).classList.toggle('expanded');
     })
   });
+  
+  setTimeout(() => {
+    const slideshow = lory(slideshowEl, {
+      infinite: 1
+    });
+
+    setInterval(slideshow.next.bind(slideshow), 5000);
+  }, 1000);
 });

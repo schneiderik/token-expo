@@ -5,13 +5,6 @@ var _loryJs = require("lory.js");
 
 document.addEventListener('DOMContentLoaded', function () {
   var slideshowEl = document.querySelector('.slideshow');
-
-  var slideshow = (0, _loryJs.lory)(slideshowEl, {
-    infinite: 1
-  });
-
-  setInterval(slideshow.next.bind(slideshow), 5000);
-
   var accordianTriggers = document.querySelectorAll('[data-accordian-trigger]');
 
   Array.from(accordianTriggers).forEach(function (trigger) {
@@ -20,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('[data-accordian-target="' + e.currentTarget.dataset.accordianTrigger + '"]').classList.toggle('expanded');
     });
   });
+
+  setTimeout(function () {
+    var slideshow = (0, _loryJs.lory)(slideshowEl, {
+      infinite: 1
+    });
+
+    setInterval(slideshow.next.bind(slideshow), 5000);
+  }, 1000);
 });
 
 },{"lory.js":2}],2:[function(require,module,exports){
